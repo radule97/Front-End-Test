@@ -63,11 +63,13 @@
 
 
   <div id="carouselExampleIndicators" class="carousel slide corp-slider" data-ride="carousel">
-    <ol class="carousel-indicators slider-dice">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
+    <div class="container">
+      <ol class="carousel-indicators slider-dice">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="images/bg2.png" alt="First slide">
@@ -1001,10 +1003,16 @@
 
   }
     /*dices*/
+      /*testED*/
+    .container > .slider-dice {
+      position: relative;
+      height: 0;
+    }
     .slider-dice {
       justify-content: left;
-      margin-right: 24.5%;
-      margin-left: 24.5%;
+      float: left;
+      margin: 0;
+      top: 350px;
     }
     .slider-dice li {
       height: 30px;
