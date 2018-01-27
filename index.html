@@ -63,13 +63,6 @@
 
 
   <div id="carouselExampleIndicators" class="carousel slide corp-slider" data-ride="carousel">
-    <div class="container">
-      <ol class="carousel-indicators slider-dice">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="images/bg2.png" alt="First slide">
@@ -94,6 +87,13 @@
           <p class="slider-text">"Less is more" by Robert Browning</p>
           <a href="" class="white-button">View More</a>
         </div>
+      </div>
+      <div class="container">
+        <ol class="carousel-indicators slider-dice">
+          <li data-target="#carouselExampleIndicators" style="margin-left: 0 !important;" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
       </div>
     </div>
     <a class="carousel-control-prev slider-arrow" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -981,7 +981,7 @@
   }
   /* SLIDER */
   .div-context {
-    width: 965px !important;
+    width: 955px !important;
     margin: -4% auto 4% auto ;
   }
   .corp-slider {
@@ -1007,13 +1007,12 @@
     .container > .slider-dice {
       position: relative;
       height: 0;
+      margin-top: -35px !important;
     }
     .slider-dice {
       justify-content: left;
       float: left;
       margin: 0;
-      top: 350px;
-      left: -1%;
     }
     .slider-dice li {
       height: 30px;
